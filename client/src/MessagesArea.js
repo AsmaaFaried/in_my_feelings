@@ -8,7 +8,6 @@ function MessagesArea({ submitMessage, newMessage, onMessageInput }) {
 			<textarea
 				type="text"
 				className="message-input"
-				placeholder="Post new message... "
 				value={newMessage}
 				onChange={onMessageInput}
 			></textarea>

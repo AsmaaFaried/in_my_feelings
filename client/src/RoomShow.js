@@ -29,6 +29,16 @@ function RoomShow({
 				handleMessageUpdate(res.data.attributes.messages)
 			})
 	}, [])
+	const handleRoom = async (id)=>{
+		let res = await fetch(`http://localhost:3000/getroom`,{
+			body:JSON.stringify({
+				id
+			})
+		})
+
+	}
+
+
 	function displayUsers(data) {
 		return data
 			.map((x) => x.attributes)
@@ -50,11 +60,11 @@ function RoomShow({
 							style={{
 								color: "white",
 								listStyle: "none",
-								overflowY: "scroll",
 								float: "left",
 							}}
 						>
-							@{user.username}
+							<a onClick={()=>handleRoom(user.id)} >{user.username}</a>
+							
 						</h6>
 					</div>
 				)
@@ -135,8 +145,9 @@ function RoomShow({
 	return (
 		<div className="chat-container">
 			<div className="users">
-				<p style={{ float: "left" }}>#{roomData.chatroom.room_name}</p>
-				<h4 style={{ float: "left" }}>Chatroom Members</h4>
+			
+				<h3 style={{ float: "left" ,marginLeft: "113px",}}>Room  {roomData.chatroom.room_name}</h3><br></br>
+				{/* <h4 style={{ float: "left" ,marginLeft: "98px"}}>Chatroom Members</h4> */}
 				{/* removed break tags */}
 				<Search search={search} setSearch={setSearch}></Search>
 				{getData !== null ? displayUsers(getData) : null}

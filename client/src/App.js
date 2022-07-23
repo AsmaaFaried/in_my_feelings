@@ -74,13 +74,13 @@ function App({ cableApp }) {
 			<div className="App">
 				<Navbar user={currentUser} setUser={setCurrentUser} />
 				<Routes>
-					<Route exact path="/" element={<Home></Home>} />
+					<Route exact path="/" element={<Home/>} />
 					<Route path="/signup" element={<Signup onSignup={handleSignups} />} />
 					<Route
 						path="/signin"
 						element={<Signin onSignin={handleUpdateCurrentUser} />}
 					/>
-					<Route path="/disclaimer" element={<Disclaimer />} />
+					{/* <Route path="/disclaimer" element={<Disclaimer />} /> */}
 					{currentUser && (
 						<Route
 							path={currentUser ? "/chatrooms/:id" : "/signin"}

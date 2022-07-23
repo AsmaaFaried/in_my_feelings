@@ -41,11 +41,11 @@ function Chatfeed({
 				src="https://yorktonrentals.com/wp-content/uploads/2017/06/usericon.png"
 				alt="avatar"
 			/>
-			<p style={{ color: "black", height: "auto" }}>{message.message_body}</p>
+			<p style={{ height: "auto" }}>{message.message_body}</p>
 			{timestamp !== "Invalid Date" ? (
-				<i style={{ fontSize: "10px" }}>{timestamp}</i>
+				<i style={{ fontSize: "15px" }}>{timestamp}</i>
 			) : (
-				<i style={{ fontSize: "10px" }}>Edited</i>
+				<i style={{ fontSize: "15px" }}>Edited</i>
 			)}
 			{whichUser() === "current-user-message" && (
 				<GiHelp style={{ float: "left" }} onClick={showEditAndDelete}></GiHelp>

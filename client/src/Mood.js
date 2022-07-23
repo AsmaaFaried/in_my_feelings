@@ -10,6 +10,8 @@ function Mood({ currentUser }) {
 		fetch(`/moods/${id}`)
 			.then((r) => r.json())
 			.then((res) => setMood(res))
+		
+
 	}, [id])
 
 	return (
@@ -23,6 +25,7 @@ function Mood({ currentUser }) {
 				</p>
 			)}
 			<NavLink exact to={`/chatrooms/${id}`} className="app-items">
+	
 				{currentUser ? (
 					"Enter the chatroom"
 				) : (

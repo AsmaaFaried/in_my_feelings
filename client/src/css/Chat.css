@@ -8,8 +8,7 @@
 	width: 30%;
 	padding-top: 48px;
 	border: 3px solid #333;
-	background-color: #0093e9;
-	background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+	background-color:#555555;
 
 	max-height: 120vh;
 }
@@ -20,54 +19,55 @@
 	border: 3px solid #333;
 	overflow: scroll;
 	max-height: 100vh;
-	background-color: #8ec5fc;
-	background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+	background-color: #343940;
+	/* background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%); */
 }
 .message-input {
 	margin-bottom: 0;
-	/* width: 400px;  */
-	overflow: auto;
-	width: 100%;
-	border-radius: 2%;
-	box-shadow: 5px 1px #888888;
-	overflow: auto;
+    height: 51px;
+    overflow: auto;
+    width: 69%;
+    border-radius: 9px;
+    overflow: auto;
+    padding: 14px 0px 0px 24px;
 }
 #messages {
 	min-height: 100vh;
 	overflow-y: scroll;
 	width: 100%;
 	/* background-color: #f8efef; */
-	background-color: #ffdee9;
-	background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+	/* background-color: #ffdee9; */
+	/* background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%); */
 }
 .message-form {
 	bottom: 0;
 	margin-right: 2px;
 	margin-left: auto;
 	margin-bottom: 50px;
-	background-color: #f8efef;
+	/* background-color: #f8efef; */
 	position: fixed;
 	width: 100%;
 }
 #chat-message {
 	margin-top: 2.5%;
-	padding: 5px;
-	border-radius: 10px;
-	box-shadow: 3px 3px black;
-	width: 50%;
+    padding: 5px;
+    border-radius: 5px;
+    /* box-shadow: 3px 3px black; */
+    width: 17%;
+
 }
 .current-user-message {
 	margin-right: 2.5%;
-	margin-left: 45%;
-	align-self: flex-end;
-	background-color: #248bf5;
-	color: #fff;
+    margin-left: 78%;
+    align-self: flex-end;
+    background-color: #248bf5;
+    color: #fff;
 }
 
 .other-user-message {
 	margin-left: 2.5%;
 	align-items: flex-start;
-	background-color: rgb(138, 202, 42);
+	background-color: #555555;
 }
 .searchArea {
 	outline: 0;
@@ -84,14 +84,17 @@
 }
 .send-button {
 	opacity: 0.8;
-	border-radius: 20%;
-	background-color: lavenderblush;
-	float: right;
-	margin-top: 0%;
-	padding-bottom: 10px;
-	margin-right: 25%;
-	box-shadow: 1px 1px #888888;
-	color: #0093e9;
+    border-radius: 5px;
+    /* background-color: lavenderblush; */
+    float: right;
+    margin-top: 0%;
+    padding-bottom: 10px;
+    margin-right: 25%;
+    /* box-shadow: 1px 1px #888888; */
+    /* color: #0093e9; */
+    width: 100px;
+    height: 49px;
+    font-size: larger;
 }
 form.edit-message {
 	display: flex;
